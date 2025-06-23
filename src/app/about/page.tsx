@@ -313,6 +313,18 @@ export default function About() {
                   </Column>
                 ))}
               </Column>
+              {about.technical.skillBadges?.display && (
+                <Column fillWidth gap="m" marginTop="32">
+                  <Text variant="heading-strong-m" marginBottom="8">{about.technical.skillBadges.title}</Text>
+                  <Flex gap="8" wrap>
+                    {about.technical.skillBadges.badges.map((badge, idx) => (
+                      <Tag key={badge.name + idx} size="l" prefixIcon={badge.icon}>
+                        {badge.name}
+                      </Tag>
+                    ))}
+                  </Flex>
+                </Column>
+              )}
             </>
           )}
         </Column>

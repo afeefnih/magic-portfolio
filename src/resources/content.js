@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Afeef",
+  lastName: "Firdaus",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Software Engineering Student | Seeking Internship",
+  avatar: "/images/avatar.jpg", // Replace with your own image if available
+  email: "afeefz2003@gmail.com",
+  location: "Asia/Kuala_Lumpur", // IANA time zone identifier
+  languages: ["English", "Bahasa"], // optional
 };
 
 const newsletter = {
@@ -18,36 +18,31 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about software development, tech tools, and my journey as a student developer.
     </>
   ),
 };
 
+
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/afeefnih", 
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/afeef-firdaus/", 
   },
   {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
-  },
+  }
 ];
+
+
 
 const home = {
   path: "/",
@@ -55,16 +50,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building impactful software through creativity and engineering</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent Project: <strong className="ml-4">E-Khairat System</strong></>,
+    href: "/work/e-khairat-system", // Update this once you create the page
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Afeef, a passionate Software Engineering student building full-stack solutions. From web to mobile apps, I enjoy solving problems using technology.
     </>
   ),
 };
@@ -73,7 +67,7 @@ const about = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Kuala Lumpur, Malaysia.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -83,59 +77,34 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com",  // You can replace this with Calendly or Google Calendar
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Afeef is a final-year Software Engineering student at Universiti Kuala Lumpur specializing in fullstack development. With strong communication and problem-solving skills, he creates applications that simplify daily tasks and improve user experiences. His proudest project, E-Khairat, digitally transforms funeral welfare contribution management. When not coding, Afeef enjoys exploring new places through hiking, swimming, and travel-bringing fresh perspectives to his technical work. He's currently seeking internship opportunities in innovative environments, with particular interest in fintech applications.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Riconis Marketing",
+        timeframe: "Jul 2024 - Oct 2024",
+        role: "Technical Assistant",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Set up and configured photostat machines for clients, ensuring smooth installation and functionality.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Configured IP addresses and network routes to ensure seamless device communication and minimize downtime.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Contributed to a 15% improvement in setup efficiency by streamlining configuration processes.
           </>,
         ],
         images: [],
@@ -143,46 +112,52 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
+
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Sijil Peperiksaan Malaysia",
+        description: <>SPM (Malaysian Certificate of Education) · SMK Sungai Ramal · 2020</>,
       },
+     
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Universiti Kuala Lumpur",
+        description: <>Foundation in Computer Technology · CGPA: 3.77</>,
+      },
+
+       {
+        name: "Universiti Kuala Lumpur",
+        description: <>Bachelor of Information Technology (Hons) in Software Engineering · CGPA: 3.69</>,
       },
     ],
   },
-  technical: {
-    display: true, // set to false to hide this section
+
+ technical: {
+    display: true, 
     title: "Technical skills",
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        description: <>Able to prototype in Figma for my Assignment Project</>,
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-figma/Reporting Dashboard.Png",
             alt: "Project image",
             width: 16,
-            height: 9,
+            height: 12,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-figma/Registration Module.Png",
             alt: "Project image",
             width: 16,
-            height: 9,
+            height:8,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Laravel",
+        description: <>Building robust web applications using Laravel with MySQL and TALL Stack.</>,
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
@@ -193,6 +168,37 @@ const about = {
         ],
       },
     ],
+    skillBadges: {
+      display: true,
+      title: "Technology Stack",
+      badges: [
+        { name: "C#", icon: "csharp" },
+        { name: "HTML5", icon: "html" },
+        { name: "Java", icon: "java" },
+        { name: "PHP", icon: "php" },
+        { name: "Dart", icon: "dart" },
+        { name: "JavaScript", icon: "javascript" },
+        { name: "DigitalOcean", icon: "digitalocean" },
+        { name: ".Net", icon: "dotnet" },
+        { name: "Alpine.js", icon: "alpinejs" },
+        { name: "Bootstrap", icon: "bootstrap" },
+        { name: "DaisyUI", icon: "daisyui" },
+        { name: "Filament", icon: "filament" },
+        { name: "Flutter", icon: "flutter" },
+        { name: "Laravel", icon: "laravel" },
+        { name: "JavaFX", icon: "javafx" },
+        { name: "NPM", icon: "npm" },
+        { name: "TailwindCSS", icon: "tailwindcss" },
+        { name: "Nginx", icon: "nginx" },
+        { name: "Apache", icon: "apache" },
+        { name: "MySQL", icon: "database" },
+        { name: "SQLite", icon: "sqlite" },
+        { name: "Figma", icon: "figma" },
+        { name: "Git", icon: "git" },
+        { name: "GitHub Actions", icon: "githubactions" },
+        { name: "Docker", icon: "docker" },
+      ]
+    }
   },
 };
 
