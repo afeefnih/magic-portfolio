@@ -54,7 +54,7 @@ const home = {
   featured: {
     display: true,
     title: <>Recent Project: <strong className="ml-4">E-Khairat System</strong></>,
-    href: "/work/e-khairat-system", // Update this once you create the page
+    href: "/work/e-khairat", // Update this once you create the page
   },
   subline: (
     <>
