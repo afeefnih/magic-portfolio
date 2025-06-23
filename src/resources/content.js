@@ -136,6 +136,38 @@ const about = {
  technical: {
     display: true, 
     title: "Technical skills",
+    skills: [
+      {
+        title: "Figma",
+        description: <>Able to prototype in Figma for my Assignment Project</>,
+        images: [
+          {
+            src: "/images/projects/project-figma/Reporting Dashboard.Png",
+            alt: "Project image",
+            width: 16,
+            height: 12,
+          },
+          {
+            src: "/images/projects/project-figma/Registration Module.Png",
+            alt: "Project image",
+            width: 16,
+            height:8,
+          },
+        ],
+      },
+      {
+        title: "Laravel",
+        description: <>Building robust web applications using Laravel with MySQL and TALL Stack.</>,
+        images: [
+          {
+            src: "/images/projects/project-01/cover-04.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+    ],
     skillBadges: {
       display: true,
       title: "Technology Stack",
