@@ -136,9 +136,6 @@ const about = {
  technical: {
     display: true, 
     title: "Technical skills",
-    skills: [
-      
-    ],
     skillBadges: {
       display: true,
       title: "Technology Stack",
