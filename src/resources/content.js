@@ -142,13 +142,13 @@ const about = {
         description: <>Able to prototype in Figma for my Assignment Project</>,
         images: [
           {
-            src: "/images/projects/project-figma/Reporting Dashboard.Png",
+            src: "/images/projects/project-figma/Reporting Dashboard.png",
             alt: "Project image",
             width: 16,
             height: 12,
           },
           {
-            src: "/images/projects/project-figma/Registration Module.Png",
+            src: "/images/projects/project-figma/Registration Module.png",
             alt: "Project image",
             width: 16,
             height:8,
