@@ -1,0 +1,140 @@
+---
+title: "Dockerized Catering Booking System"
+publishedAt: "2024-05-10"
+summary: "A containerized PHP catering booking platform with Docker deployment, featuring user authentication, API payment gateway integration, and seamless team collaboration setup."
+images:
+  - "/images/projects/project-01/cover-03.jpg"
+  - "/images/projects/project-01/image-01.jpg"
+team:
+  - name: "Afeef Firdaus"
+    role: "Full-Stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/afeef-firdaus/" 
+link: "https://github.com/afeefnih" 
+tags:
+  - PHP
+  - Docker
+  - MySQL
+  - API Integration
+  - DevOps
+---
+
+## Overview
+
+The **Dockerized Catering Booking System** is a modern web application built with **PHP and MySQL**, designed to streamline catering service bookings. This project showcases advanced **Docker containerization** techniques, eliminating traditional XAMPP dependencies and enabling seamless team collaboration through consistent development environments.
+
+The platform features secure user authentication, comprehensive menu management, and integrated payment processing through API gateway services, all deployed using **Docker Compose** for scalable and maintainable infrastructure.
+
+---
+
+## Demo Video
+
+<Media
+  src="https://www.youtube.com/watch?v=example-catering-demo"
+  alt="Catering Booking System Demo"
+  aspectRatio="16/9"
+  radius="l"
+/>
+
+---
+
+## Key Features
+
+- 🐳 **Complete Docker Containerization**  
+  Full Docker Compose setup with PHP/Apache, MySQL, and phpMyAdmin containers for instant environment readiness.
+
+- 🔐 **Secure User Authentication**  
+  Robust login/registration system with session management and secure password handling.
+
+- 📋 **Dynamic Menu Management**  
+  Administrative interface for managing catering menus, pricing, and availability with real-time updates.
+
+- 💳 **API Payment Gateway**  
+  Integrated payment processing with secure configuration management using environment-based file separation.
+
+- 📊 **Booking Management System**  
+  Comprehensive booking forms with date/time selection, guest count, and special requirements handling.
+
+- 🔄 **Auto-Database Setup**  
+  Automated database initialization via `cateringdata.sql` ensuring instant deployment readiness.
+
+- ⚡ **Live Reload Development**  
+  Hot reload capabilities with persistent data across container restarts for efficient development workflow.
+
+---
+
+## Tech Stack
+
+**Backend:**
+- PHP 8.x
+- MySQL 8.0
+- Apache Web Server
+- RESTful API Design
+
+**DevOps & Deployment:**
+- Docker & Docker Compose
+- Container Orchestration
+- Environment Configuration Management
+- Volume Mounting for Persistence
+
+**Development Tools:**
+- phpMyAdmin (Database Management)
+- Git Version Control
+- Environment Variables (.env)
+- Automated Database Seeding
+
+---
+
+## Docker Architecture
+
+**Container Services:**
+- **PHP/Apache Container**: Main application server with PHP 8.x and Apache
+- **MySQL Container**: Database service with persistent volume mounting
+- **phpMyAdmin Container**: Web-based database administration interface
+
+**Key Docker Features:**
+- **Volume Persistence**: Data survives container restarts and rebuilds
+- **Environment Isolation**: Clean separation between development and production configs  
+- **Port Mapping**: Accessible web interface and database connections
+- **Network Configuration**: Internal container communication and external access
+
+---
+
+## My Role & Technical Contributions
+
+As the sole developer, I architected and implemented:
+
+- **Containerization Strategy**: Designed the complete Docker Compose configuration for multi-service deployment
+- **Database Architecture**: Created the MySQL schema and automated seeding process via `cateringdata.sql`
+- **Authentication System**: Built secure user authentication with PHP sessions and password hashing
+- **API Integration**: Implemented payment gateway API with secure configuration handling
+- **Development Workflow**: Established live reload and persistent data systems for team collaboration
+- **Environment Management**: Created environment-based configuration separation for secure deployment
+
+---
+
+## Technical Highlights
+
+- **Zero-Dependency Setup**: Eliminated XAMPP requirements, enabling any team member to spin up the environment with a single `docker-compose up` command
+- **Security Best Practices**: Used environment variables for sensitive configuration data, preventing hardcoded credentials in source code
+- **Database Automation**: Implemented automatic database initialization and sample data loading for immediate testing capabilities
+- **Cross-Platform Compatibility**: Docker ensures consistent behavior across Windows, macOS, and Linux development environments
+- **Scalable Architecture**: Container-based design allows easy horizontal scaling and service isolation
+
+---
+
+## Development & Deployment Benefits
+
+- **Team Collaboration**: Instant development environment setup for new team members
+- **Environment Consistency**: Identical development, staging, and production environments
+- **Resource Efficiency**: Lightweight containers with optimized resource allocation
+- **Version Control**: Infrastructure as Code approach with all configurations in Git
+- **Easy Maintenance**: Simplified updates and dependency management through Docker images
+
+---
+
+## Impact & Learning Outcomes
+
+This project significantly enhanced my **DevOps skills** and demonstrated the power of containerization in modern web development. It eliminated the common "works on my machine" problem and established a professional development workflow that scales with team size.
+
+The experience gained in **Docker containerization**, **environment management**, and **API integration** has become fundamental to my approach to building maintainable, scalable web applications.

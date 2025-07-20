@@ -6,9 +6,10 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Software Engineering Student | Seeking Internship",
+  role: "Software Engineering Student | Available for Internship Aug 2025 - Feb 2026",
   avatar: "/images/avatar.jpg", // Replace with your own image if available
-  email: "afeefz2003@gmail.com",
+  email: "afeef.firdaus14@gmail.com",
+  phone: "(+60)13-8163793",
   location: "Asia/Kuala_Lumpur", // IANA time zone identifier
   languages: ["English", "Bahasa"], // optional
 };
@@ -77,14 +78,14 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",  // You can replace this with Calendly or Google Calendar
+    link: "https://cal.com/afeef-firdaus",  // You can replace this with Calendly or Google Calendar
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Afeef is a final-year Software Engineering student at Universiti Kuala Lumpur specializing in fullstack development. With strong communication and problem-solving skills, he creates applications that simplify daily tasks and improve user experiences. His proudest project, E-Khairat, digitally transforms funeral welfare contribution management. When not coding, Afeef enjoys exploring new places through hiking, swimming, and travel-bringing fresh perspectives to his technical work. He's currently seeking internship opportunities in innovative environments, with particular interest in fintech applications.
+        Software Engineering student with strong hands-on experience in backend development, API integration, and full-stack web solutions using Laravel, PHP, MySQL, and Docker. Developed real-world systems like a digital funeral fund platform (E-Khairat) and a containerized catering booking system with ToyyibPay integration. Passionate about solving community-based problems through impactful software. Fast learner and team player with a strong foundation in database logic and collaborative development. Currently maintaining a 3.67 CGPA and available for a full-time internship from 11 August 2025 to 11 February 2026.
       </>
     ),
   },
@@ -102,6 +103,12 @@ const about = {
           </>,
           <>
             Configured IP addresses and network routes to ensure seamless device communication and minimize downtime.
+          </>,
+          <>
+            Provided technical support and troubleshooting during installations, contributing to high customer satisfaction.
+          </>,
+          <>
+            Delivered efficient, timely setup services, ensuring smooth integration of equipment for clients.
           </>,
           <>
             Contributed to a 15% improvement in setup efficiency by streamlining configuration processes.
@@ -128,7 +135,30 @@ const about = {
 
        {
         name: "Universiti Kuala Lumpur",
-        description: <>Bachelor of Information Technology (Hons) in Software Engineering · CGPA: 3.69</>,
+        description: <>Bachelor of Information Technology (Hons) in Software Engineering · CGPA: 3.67</>,
+      },
+    ],
+  },
+  
+  achievements: {
+    display: true,
+    title: "Achievements & Certifications",
+    items: [
+      {
+        title: "Top Coders Malaysia 2024 – 3rd Place",
+        description: "Achieved 3rd place out of 24 participants in Python programming, problem-solving, and critical thinking competition organized by Data Science Association, Thulija Technologies Sdn. Bhd., and UniKL MIIT, supported by MDEC.",
+      },
+      {
+        title: "Dean's List Recognition",
+        description: "Dean's list for Semester 1, 2, and 5 - consistently maintaining high academic performance throughout university studies.",
+      },
+      {
+        title: "Google Project Management Professional Certificate",
+        description: "Completed comprehensive project management certification program, gaining skills in project planning, execution, and stakeholder management.",
+      },
+      {
+        title: "UMPSA Hackathon Participant",
+        description: "Contributed to the development of Raska, a hunger mitigation app using Flutter, addressing food insecurity through innovative technological solutions.",
       },
     ],
   },
@@ -138,26 +168,20 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma for my Assignment Project</>,
+        title: "Backend Development",
+        description: <>Strong experience in Laravel, PHP, and MySQL for building scalable web applications with API integration and secure payment processing.</>,
         images: [
           {
-            src: "/images/projects/project-figma/Reporting Dashboard.png",
-            alt: "Project image",
+            src: "/images/projects/E-Khairat/Cover.png",
+            alt: "E-Khairat Project",
             width: 16,
-            height: 12,
-          },
-          {
-            src: "/images/projects/project-figma/Registration Module.png",
-            alt: "Project image",
-            width: 16,
-            height:8,
+            height: 9,
           },
         ],
       },
       {
-        title: "Laravel",
-        description: <>Building robust web applications using Laravel with MySQL and TALL Stack.</>,
+        title: "Full-Stack Development",
+        description: <>Proficient in TALL Stack (Tailwind CSS, Alpine.js, Laravel, Livewire) and ASP.NET MVC with C# for comprehensive web solutions.</>,
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
@@ -167,36 +191,55 @@ const about = {
           },
         ],
       },
+      {
+        title: "Mobile Development",
+        description: <>Flutter application development with user authentication, data management, and cross-platform compatibility.</>,
+        images: [
+          {
+            src: "/images/projects/Homestay/homestay.svg",
+            alt: "Homestay App",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "DevOps & Containerization",
+        description: <>Docker expertise for containerized deployment, environment management, and team collaboration workflows.</>,
+        images: [
+          {
+            src: "/images/projects/project-figma/Reporting Dashboard.png",
+            alt: "Project image",
+            width: 16,
+            height: 12,
+          },
+        ],
+      },
     ],
     skillBadges: {
       display: true,
       title: "Technology Stack",
       badges: [
-        { name: "C#", icon: "csharp" },
-        { name: "HTML5", icon: "html" },
-        { name: "Java", icon: "java" },
         { name: "PHP", icon: "php" },
-        { name: "Dart", icon: "dart" },
-        { name: "JavaScript", icon: "javascript" },
-        { name: "DigitalOcean", icon: "digitalocean" },
-        { name: ".Net", icon: "dotnet" },
-        { name: "Alpine.js", icon: "alpinejs" },
-        { name: "Bootstrap", icon: "bootstrap" },
-        { name: "DaisyUI", icon: "daisyui" },
-        { name: "Filament", icon: "filament" },
-        { name: "Flutter", icon: "flutter" },
+        { name: "Python", icon: "python" },
+        { name: "Java", icon: "java" },
+        { name: "C#", icon: "csharp" },
         { name: "Laravel", icon: "laravel" },
-        { name: "JavaFX", icon: "javafx" },
-        { name: "NPM", icon: "npm" },
+        { name: "ASP.NET", icon: "dotnet" },
+        { name: "Flutter", icon: "flutter" },
+        { name: "Bootstrap", icon: "bootstrap" },
         { name: "TailwindCSS", icon: "tailwindcss" },
-        { name: "Nginx", icon: "nginx" },
-        { name: "Apache", icon: "apache" },
         { name: "MySQL", icon: "database" },
         { name: "SQLite", icon: "sqlite" },
-        { name: "Figma", icon: "figma" },
-        { name: "Git", icon: "git" },
-        { name: "GitHub Actions", icon: "githubactions" },
         { name: "Docker", icon: "docker" },
+        { name: "Git", icon: "git" },
+        { name: "HTML5", icon: "html" },
+        { name: "JavaScript", icon: "javascript" },
+        { name: "Alpine.js", icon: "alpinejs" },
+        { name: "Livewire", icon: "laravel" },
+        { name: "Dart", icon: "dart" },
+        { name: "Visual Studio Code", icon: "vscode" },
+        { name: "GitHub", icon: "github" },
       ]
     }
   },
